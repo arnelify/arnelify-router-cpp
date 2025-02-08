@@ -64,7 +64,7 @@ Change log:
 * NodeJS (Bun) addon
 * FFI Support
 
-Please use this version with caution, as it may contain bugs and unfinished features. We are actively working on improving and expanding the server's capabilities, and we welcome your feedback and suggestions.
+Please use this version with caution, as it may contain bugs and unfinished features. We are actively working on improving and expanding the router's capabilities, and we welcome your feedback and suggestions.
 
 ## 🔗 Mentioned
 

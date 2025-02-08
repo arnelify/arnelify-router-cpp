@@ -8,11 +8,9 @@
 #include "json.h"
 #include "napi.h"
 
-#include "uds/index.cpp"
 #include "index.cpp"
 
 ArnelifyRouter* router = nullptr;
-ArnelifyUnixDomainSocketClient* uds = nullptr;
 
 Napi::Value router_create(const Napi::CallbackInfo& args) {
   Napi::Env env = args.Env();

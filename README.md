@@ -14,7 +14,7 @@
 ## 📦 Installation
 Install to the folder that needs to be created:
 ```
-git clone https://github.com/arnelify/arnelify-server-cpp.git
+git clone https://github.com/arnelify/arnelify-router-cpp.git
 ```
 Run Docker:
 ```

@@ -3,7 +3,7 @@
 ![Arnelify Router for C++](https://img.shields.io/badge/Arnelify%20Router%20for%20C++-0.5.4-yellow) ![C++](https://img.shields.io/badge/C++-2b-red) ![G++](https://img.shields.io/badge/G++-14.2.0-blue) ![C-Lang](https://img.shields.io/badge/CLang-14.0.6-blue)
 
 ## 🚀 About
-**Arnelify® Router for C++** - is a minimalistic dynamic library which is a powerful Router written in C and C++.
+**Arnelify® Router for C++** - is a minimalistic dynamic library which is a powerful router written in C and C++.
 
 ## 📋 Minimal Requirements
 > Important: It's strongly recommended to use in a container that has been built from the gcc v14.2.0 image.

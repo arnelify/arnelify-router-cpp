@@ -1,6 +1,6 @@
 <img src="https://static.wikia.nocookie.net/arnelify/images/c/c8/Arnelify-logo-2024.png/revision/latest?cb=20240701012515" style="width:336px;" alt="Arnelify Logo" />
 
-![Arnelify Router for C++](https://img.shields.io/badge/Arnelify%20Router%20for%20C++-0.5.5-yellow) ![C++](https://img.shields.io/badge/C++-2b-red) ![G++](https://img.shields.io/badge/G++-14.2.0-blue) ![C-Lang](https://img.shields.io/badge/CLang-14.0.6-blue)
+![Arnelify Router for C++](https://img.shields.io/badge/Arnelify%20Router%20for%20C++-0.5.8-yellow) ![C++](https://img.shields.io/badge/C++-2b-red) ![G++](https://img.shields.io/badge/G++-14.2.0-blue) ![C-Lang](https://img.shields.io/badge/CLang-14.0.6-blue)
 
 ## 🚀 About
 **Arnelify® Router for C++** - is a minimalistic dynamic library which is a powerful router written in C and C++.
@@ -54,7 +54,7 @@ This software is licensed under the <a href="https://github.com/arnelify/arnelif
 Join us to help improve this software, fix bugs or implement new functionality. Active participation will help keep the software up-to-date, reliable, and aligned with the needs of its users.
 
 ## ⭐ Release Notes
-Version 0.5.5 - Minimalistic dynamic library
+Version 0.5.8 - Minimalistic dynamic library
 
 We are excited to introduce the Arnelify Router for C++ dynamic library! Please note that this version is raw and still in active development.
 

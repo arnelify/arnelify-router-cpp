@@ -39,11 +39,48 @@ class ArnelifyRouter {
     }
   }
 
+  const std::string getLibPath() {
+    const std::filesystem::path scriptDir =
+        std::filesystem::absolute(__FILE__).parent_path();
+
+    const bool hasExitSegment = scriptDir.string().ends_with("..");
+    if (!hasExitSegment) {
+      std::filesystem::path libDir = scriptDir.parent_path();
+      const std::string libPath = libDir / "build" / "index.so";
+      return libPath;
+    }
+
+    std::istringstream stream(scriptDir);
+    std::deque<std::string> segments;
+    std::string segment;
+
+    while (std::getline(stream, segment, '/')) {
+      if (segment.empty()) continue;
+
+      if (segment == "..") {
+        if (!segments.empty()) {
+          segments.pop_back();
+          segments.pop_back();
+        }
+        continue;
+      }
+
+      segments.push_back(segment);
+    }
+
+    std::string libPath;
+    for (const auto& segment : segments) {
+      libPath += "/" + segment;
+    }
+
+    libPath += "/build/index.so";
+    return libPath;
+  }
+
  public:
   ArnelifyRouter() : iterator(0) {
-    std::filesystem::path folderPath = std::filesystem::current_path();
-    this->libPath = folderPath / "build" / "index.so";
-    this->lib = dlopen(this->libPath.c_str(), RTLD_LAZY);
+    const std::string libPath = this->getLibPath();
+    this->lib = dlopen(libPath.c_str(), RTLD_LAZY);
     if (!this->lib) throw std::runtime_error(dlerror());
 
     loadFunction("router_create", this->router_create);
